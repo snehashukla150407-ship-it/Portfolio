@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins'; 
+    color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: auto;
+    gap: 50px;
+}
+.glass{
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 17px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.navbar{
+    height: 10vh;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.name{
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+.name :hover{
+    font-size: 1.55rem;
+}
+.content a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0px 15px;
+}
+.content a:hover{
+    font-size: 0.9rem;
+}
+@media (max-width:600px) {
+    .navbar{
+        padding: 0px 20px;
+    }
+    .content a{
+        margin: 0px 5px ;
+    }
+    body{
+        height: auto;
+    }
+}
+@media (max-width:500px) {
+    .navbar{
+        padding: 0px 15px;
+    }
+    .name{
+        font-size: 1.2rem;
+    }
+    .content a{
+        font-size: 0.8rem;
+    }
+    .name :hover{
+        font-size: 1.3rem;
+    }
+    .content a:hover{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:400px) {
+    .navbar{
+        padding: 0px 7px;
+    }
+    .content a{
+        margin: 0px 2px;
+        font-size: 0.7rem;
+    }
+    .name{
+        font-size: 1rem;
+    }
+    .content a:hover{
+        font-size: 0.8rem;
+    }
+    .name :hover{
+        font-size: 1.1rem;
+    }
+}
+.outer{
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 5px 20px;
+}
+.inner{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 95%;
+    padding: 15px;
+}
+.head-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.contact-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-links a{
+    text-decoration: none;
+    margin-right:50px ;
+    font-size: 0.8rem;
+}
+.anchor{
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 80vw;
+}
+.box{
+    max-width: 300px;
+    padding: 13px;
+    margin: 10px;
+}
+.work{
+    height: 300px;
+    max-width: 300px;
+}
+.yarnify{
+    background-image: url("yarnify.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.rece{
+    background-image: url("recepie.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.prod{
+    background-image: url("prod.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.info{
+    padding: 10px;
+}
+.para{
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 7px 0px;
+}
+.info h3{
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+.info a{
+    font-size: 1.2rem;
+    display: block;
+    text-decoration: none;
+}
+.info i{
+    font-size: 0.85rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar glass">
+            <div class="name">
+                <p>Sneha Shukla</p>
+            </div>
+            <div class="content">
+                <a href="index.html">Home</a>
+                <a href="project.html" style="text-decoration: underline;">Works</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="first glass box">
+            <div class="work yarnify"></div>
+            <div class="info">
+                <h3>Yarnify landing page</h3>
+                <p><strong> A charming handmade crochet e-commerce storefront.</strong></p>
+                <p class="para">Built a responsive digital storefront featuring custom layout structures, a multi-section grid, and smooth hover animations.</p>
+                <p class="para"><strong>Technical Highlights:</strong>HTML5 Responsive CSS Flexbox</p>
+                <a href="https://monumental-mermaid-6d41dc.netlify.app">View Project <i class="fa-solid fa-arrow-pointer"></i></a>
+                <a href="https://github.com/snehashukla150407-ship-it/YarnifyLandingPage.git">View Code <i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="sec glass box">
+            <div class="work prod"></div>
+            <div class="info">
+                <h3>Gabrielle Product Card</h3>
+                <p><strong>Premium, pixel-perfect commercial UI component.</strong></p>
+                <p class="para">
+                    Focused on exact typography hierarchies, handling mismatched content heights, and fluid cross-device structural transformations.
+                </p>
+                <p class="para"><strong>Technical Highlights:</strong> >UI Design Typography Media Queries</p>
+                <a href="https://jocular-valkyrie-ff2ad2.netlify.app">View Project <i class="fa-solid fa-arrow-pointer"></i></a>
+                <a href="https://github.com/snehashukla150407-ship-it/ProductCard.git">View Code <i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="third glass box">
+            <div class="work rece"></div>
+            <div class="info">
+                <h3>Garlic Pasta Recipe</h3>
+                <p><strong>Clean, content-focused utility page.</strong></p>
+                <p class="para">
+                    Showcases structural data organization using semantic HTML markup, custom color-themed blocks, and clean data alignment via CSS tables.
+                </p>
+                <p class="para"><strong>Technical Highlights:</strong> Semantic HTML5  CSS Tables  Fluid Layouts</p>
+                <a href="https://melodic-kleicha-e9cfa9.netlify.app"> View Project <i class="fa-solid fa-arrow-pointer"></i></a>
+                <a href="https://github.com/snehashukla150407-ship-it/RecipePage.git">View Code <i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="outer glass">
+            <div class="inner glass">
+                <div class="head-footer">
+                    <h3>Let's Connect</h3>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <p class="content" style="padding: 0px;">Whether you want to collaborate or just say hello,feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="mailto:snehashukla150407@gmail.com">Email</a>
+                    <a href="https://github.com/snehashukla150407-ship-it">GitHub</a>
+                </div>
+            </div>
+            <p>Handcrafted by Sneha Shukla</p>
+            <a class="anchor" href="">View Code</a>
+        </div>
+    </footer>
+</body>
+</html>
